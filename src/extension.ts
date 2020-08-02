@@ -83,6 +83,7 @@ export async function activate(context: vscode.ExtensionContext) {
     }
   );
 
+  context.subscriptions.push(createProject);
   context.subscriptions.push(installLibrary);
 }
 
