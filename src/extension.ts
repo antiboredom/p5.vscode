@@ -40,12 +40,12 @@ export async function activate(context: vscode.ExtensionContext) {
   let installLibrary = vscode.commands.registerCommand(
     "p5-vscode.installLibrary",
     async () => {
-      const libraries = p5Libraries.contributed
+      const libraries = p5Libraries
         .filter((l) => l.install)
         .map((l) => {
           return {
             label: l.name,
-            description: l.authors.map((a) => a.name).join(", "),
+            description: l.authors ? l.authors.map((a) => a.name).join(", ") : "",
             detail: l.desc,
             install: l.install,
             url: l.url,
@@ -95,7 +95,9 @@ async function installP5Library(url: string | string[]) {
     !existsSync(path.join(workspacePath, "index.html")) ||
     !existsSync(path.join(workspacePath, "libraries"))
   ) {
-    vscode.window.showErrorMessage("Make sure your workspace includes an index.html and a libraries folder.")
+    vscode.window.showErrorMessage(
+      "Make sure your workspace includes an index.html and a libraries folder."
+    );
     return false;
   }
 
