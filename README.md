@@ -33,4 +33,4 @@ I made this extension for my students in particular, but I hope it's helpful for
 - Library installation requires a project workspace containing an `index.html` file and a `libraries` folder.
 - I've attempted to integrate all the contributed libraries found on [p5's library page](https://p5js.org/libraries/). If I've missed anything, please just let me know.
 
-Please [log an issue on github](https://github.com/antiboredom/p5.vscode/issues) if you find any problems or have suggestions.
+Please [log an issue on GitHub](https://github.com/antiboredom/p5.vscode/issues) if you find any problems or have suggestions.
