@@ -1,12 +1,20 @@
 import * as vscode from "vscode";
-import { existsSync, open } from "fs";
+import { existsSync, createWriteStream, writeFileSync, readFileSync } from "fs";
+import * as path from "path";
+import got from "got";
+import { Stream } from "stream";
+import { promisify } from "util";
+
+import p5Libraries from "./libraries.json";
+
+const pipeline = promisify(Stream.pipeline);
 const Uri = vscode.Uri;
-const fs = vscode.workspace.fs;
+const vsfs = vscode.workspace.fs;
 
 export async function activate(context: vscode.ExtensionContext) {
   // openPreviousFile(context);
 
-  let disposable = vscode.commands.registerCommand(
+  let createProject = vscode.commands.registerCommand(
     "p5-vscode.createProject",
     async () => {
       try {
@@ -29,7 +37,91 @@ export async function activate(context: vscode.ExtensionContext) {
     }
   );
 
-  context.subscriptions.push(disposable);
+  let installLibrary = vscode.commands.registerCommand(
+    "p5-vscode.installLibrary",
+    async () => {
+      const libraries = p5Libraries.contributed
+        .filter((l) => l.install)
+        .map((l) => {
+          return {
+            label: l.name,
+            description: l.authors.map((a) => a.name).join(", "),
+            detail: l.desc,
+            install: l.install,
+            url: l.url,
+          };
+        });
+      const result = await vscode.window.showQuickPick(libraries, {
+        placeHolder: "Library name",
+        //   onDidSelectItem: (item) =>
+        //     vscode.window.showInformationMessage(`Focus ${item}`),
+      });
+      if (result) {
+        const action = await vscode.window.showQuickPick(
+          [
+            {
+              label: "Install " + result.label,
+              action: "install",
+            },
+            {
+              label: "Visit home page",
+              action: "visit",
+            },
+          ],
+          {
+            placeHolder: "Select action",
+          }
+        );
+        if (action) {
+          if (action.action == "install" && result.install) {
+            installP5Library(result.install);
+          } else {
+            vscode.env.openExternal(vscode.Uri.parse(result.url));
+          }
+        }
+      }
+    }
+  );
+
+  context.subscriptions.push(installLibrary);
+}
+
+async function installP5Library(url: string | string[]) {
+  const workspacePath = vscode.workspace.rootPath;
+
+  if (
+    !workspacePath ||
+    !existsSync(path.join(workspacePath, "index.html")) ||
+    !existsSync(path.join(workspacePath, "libraries"))
+  ) {
+    vscode.window.showErrorMessage("Make sure your workspace includes an index.html and a libraries folder.")
+    return false;
+  }
+
+  const urls = typeof url === "string" ? [url] : url;
+
+  for (const u of urls) {
+    const basename = path.basename(u);
+    const dest = path.join(workspacePath, "libraries", basename);
+    const indexPath = path.join(workspacePath, "index.html");
+    if (!existsSync(dest)) {
+      try {
+        await pipeline(got.stream(u), createWriteStream(dest));
+      } catch (e) {
+        vscode.window.showErrorMessage("Could not download library.");
+      }
+    }
+    let indexFileContents = readFileSync(indexPath, "utf-8");
+    const scriptTag = `<script src="libraries/${basename}"></script>`;
+    if (!indexFileContents.includes(scriptTag)) {
+      indexFileContents = indexFileContents.replace(
+        "</head>",
+        `  ${scriptTag}\n  </head>`
+      );
+      writeFileSync(indexPath, indexFileContents);
+    }
+    vscode.window.showInformationMessage("Library installed");
+  }
 }
 
 async function openPreviousFile(context: vscode.ExtensionContext) {
@@ -37,7 +129,6 @@ async function openPreviousFile(context: vscode.ExtensionContext) {
     "p5SketchToOpen"
   );
   if (sketchToOpen) {
-    console.log("FOUND", sketchToOpen);
     await vscode.commands.executeCommand("vscode.open", Uri.file(sketchToOpen));
     await context.globalState.update("p5SketchToOpen", undefined);
   }
@@ -55,10 +146,10 @@ async function copyTemplate(dest: string) {
   const baseSrc = Uri.joinPath(Uri.file(__dirname), "../template");
 
   const baseDest = Uri.file(dest);
-  fs.createDirectory(baseDest);
+  vsfs.createDirectory(baseDest);
 
   const librariesPath = Uri.joinPath(baseDest, "libraries");
-  fs.createDirectory(librariesPath);
+  vsfs.createDirectory(librariesPath);
 
   for (const p of paths) {
     const src = Uri.joinPath(baseSrc, p);
@@ -69,7 +160,7 @@ async function copyTemplate(dest: string) {
     }
 
     try {
-      await fs.copy(src, dest, { overwrite: false });
+      await vsfs.copy(src, dest, { overwrite: false });
     } catch (e) {
       console.error(e);
     }
