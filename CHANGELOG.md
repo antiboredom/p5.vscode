@@ -4,6 +4,10 @@ All notable changes to the "p5-vscode" extension will be documented in this file
 
 ## [Unreleased]
 
+## [1.1.2]
+### Fixed
+- Lowered required version to 1.4.6
+
 ## [1.1.1]
 ### Added
 - Internal scripts to update libraries
