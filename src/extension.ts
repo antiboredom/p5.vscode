@@ -73,7 +73,7 @@ export async function activate(context: vscode.ExtensionContext) {
           }
         );
         if (action) {
-          if (action.action == "install" && result.install) {
+          if (action.action === "install" && result.install) {
             installP5Library(result.install);
           } else {
             vscode.env.openExternal(vscode.Uri.parse(result.url));
