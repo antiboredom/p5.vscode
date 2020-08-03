@@ -53,8 +53,6 @@ export async function activate(context: vscode.ExtensionContext) {
         });
       const result = await vscode.window.showQuickPick(libraries, {
         placeHolder: "Library name",
-        //   onDidSelectItem: (item) =>
-        //     vscode.window.showInformationMessage(`Focus ${item}`),
       });
       if (result) {
         const action = await vscode.window.showQuickPick(
