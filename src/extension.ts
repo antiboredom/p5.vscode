@@ -12,8 +12,6 @@ const Uri = vscode.Uri;
 const vsfs = vscode.workspace.fs;
 
 export async function activate(context: vscode.ExtensionContext) {
-  // openPreviousFile(context);
-
   let createProject = vscode.commands.registerCommand(
     "p5-vscode.createProject",
     async () => {
@@ -27,9 +25,19 @@ export async function activate(context: vscode.ExtensionContext) {
           const dest = filePath[0].path;
           await copyTemplate(dest);
           const destUri = Uri.file(dest);
-          // const sketchFile = Uri.joinPath(destUri, "sketch.js");
-          // await context.globalState.update("p5SketchToOpen", sketchFile.path);
-          await vscode.commands.executeCommand("vscode.openFolder", destUri);
+
+          // open a workspace folder in a new window
+          await vscode.commands.executeCommand(
+            "vscode.openFolder",
+            destUri,
+            true
+          );
+
+          // hacky way to actually open the sketch file...
+          const sketchFile = Uri.parse(
+            `vscode://file${Uri.joinPath(destUri, "sketch.js").path}`
+          );
+          await vscode.env.openExternal(sketchFile);
         }
       } catch (e) {
         console.error(e);
@@ -45,7 +53,9 @@ export async function activate(context: vscode.ExtensionContext) {
         .map((l) => {
           return {
             label: l.name,
-            description: l.authors ? l.authors.map((a) => a.name).join(", ") : "",
+            description: l.authors
+              ? l.authors.map((a) => a.name).join(", ")
+              : "",
             detail: l.desc,
             install: l.install,
             url: l.url,
@@ -122,16 +132,6 @@ async function installP5Library(url: string | string[]) {
       writeFileSync(indexPath, indexFileContents);
     }
     vscode.window.showInformationMessage("Library installed");
-  }
-}
-
-async function openPreviousFile(context: vscode.ExtensionContext) {
-  const sketchToOpen: string | undefined = context.globalState.get(
-    "p5SketchToOpen"
-  );
-  if (sketchToOpen) {
-    await vscode.commands.executeCommand("vscode.open", Uri.file(sketchToOpen));
-    await context.globalState.update("p5SketchToOpen", undefined);
   }
 }
 
