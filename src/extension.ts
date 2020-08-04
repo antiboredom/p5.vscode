@@ -27,11 +27,7 @@ export async function activate(context: vscode.ExtensionContext) {
           const destUri = Uri.file(dest);
 
           // open a workspace folder in a new window
-          await vscode.commands.executeCommand(
-            "vscode.openFolder",
-            destUri,
-            true
-          );
+          await vscode.commands.executeCommand("vscode.openFolder", destUri, true);
 
           // hacky way to actually open the sketch file...
           const sketchFile = Uri.parse(
@@ -53,9 +49,7 @@ export async function activate(context: vscode.ExtensionContext) {
         .map((l) => {
           return {
             label: l.name,
-            description: l.authors
-              ? l.authors.map((a) => a.name).join(", ")
-              : "",
+            description: l.authors ? l.authors.map((a) => a.name).join(", ") : "",
             detail: l.desc,
             install: l.install,
             url: l.url,
