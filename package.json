@@ -38,7 +38,6 @@
     ]
   },
   "extensionPack": [
-    "acidic9.p5js-snippets",
     "ritwickdey.liveserver"
   ],
   "scripts": {
