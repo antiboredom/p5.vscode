@@ -143,9 +143,11 @@ async function copyTemplate(dest: string) {
   const baseDest = Uri.file(dest);
   vsfs.createDirectory(baseDest);
 
+  // create the libraries directory
   const librariesPath = Uri.joinPath(baseDest, "libraries");
   vsfs.createDirectory(librariesPath);
 
+  // copy over all the files
   for (const p of paths) {
     const src = Uri.joinPath(baseSrc, p);
     const dest = Uri.joinPath(baseDest, p);
@@ -160,6 +162,17 @@ async function copyTemplate(dest: string) {
       console.error(e);
     }
   }
+
+  // creates a jsonconfig that tells vscode where to find the types file
+  const jsconfig = {
+    include: [
+      "*.js",
+      "libraries/*.js",
+      Uri.joinPath(Uri.file(__dirname), "../node_modules/@types/p5/global.d.ts").path,
+    ],
+  };
+  const jsconfigPath = Uri.joinPath(baseDest, "jsconfig.json").path;
+  writeFileSync(jsconfigPath, JSON.stringify(jsconfig, null, 2));
 }
 
 // this method is called when your extension is deactivated
