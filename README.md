@@ -23,6 +23,7 @@ I made this extension for my students in particular, but I hope it's helpful for
 
 - Creates a p5.js project by populating an empty folder with required html/css/js files.
 - Browse and install third-party p5.js libraries.
+- Autocompletion and documentation for p5 keywords & functions using TypeScript definitions.
 - Avoids CDN use so that project creation can work offline.
 - Comes bundled with other recommended VS Code extensions to make things easier for beginners & students.
 
