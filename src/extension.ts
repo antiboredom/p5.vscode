@@ -168,7 +168,7 @@ async function copyTemplate(dest: string) {
     include: [
       "*.js",
       "libraries/*.js",
-      Uri.joinPath(Uri.file(__dirname), "../node_modules/@types/p5/global.d.ts").path,
+      Uri.joinPath(Uri.file(__dirname), "../p5types/global.d.ts").path,
     ],
   };
   const jsconfigPath = Uri.joinPath(baseDest, "jsconfig.json").path;
