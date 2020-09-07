@@ -30,10 +30,12 @@ export async function activate(context: vscode.ExtensionContext) {
           await vscode.commands.executeCommand("vscode.openFolder", destUri, true);
 
           // hacky way to actually open the sketch file...
-          const sketchFile = Uri.parse(
-            `vscode://file${Uri.joinPath(destUri, "sketch.js").path}`
-          );
-          await vscode.env.openExternal(sketchFile);
+          if (process.platform !== "win32") {
+            const sketchFile = Uri.parse(
+              `vscode://file${Uri.joinPath(destUri, "sketch.js").path}`
+            );
+            await vscode.env.openExternal(sketchFile);
+          }
         }
       } catch (e) {
         console.error(e);
@@ -168,11 +170,11 @@ async function copyTemplate(dest: string) {
     include: [
       "*.js",
       "libraries/*.js",
-      Uri.joinPath(Uri.file(__dirname), "../p5types/global.d.ts").path,
+      Uri.joinPath(Uri.file(__dirname), "../p5types", "global.d.ts").fsPath,
     ],
   };
-  const jsconfigPath = Uri.joinPath(baseDest, "jsconfig.json").path;
-  writeFileSync(jsconfigPath, JSON.stringify(jsconfig, null, 2));
+  const jsconfigPath = Uri.joinPath(baseDest, "jsconfig.json");
+  writeFileSync(jsconfigPath.fsPath, JSON.stringify(jsconfig, null, 2));
 }
 
 // this method is called when your extension is deactivated

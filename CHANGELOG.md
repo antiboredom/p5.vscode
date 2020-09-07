@@ -4,6 +4,12 @@ All notable changes to the "p5-vscode" extension will be documented in this file
 
 ## [Unreleased]
 
+## [1.2.3]
+
+### Fixed
+
+- Fixed autocomplete and open project issues on windows.
+
 ## [1.2.0]
 
 ### Added
