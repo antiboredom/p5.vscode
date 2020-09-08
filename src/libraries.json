@@ -46,7 +46,7 @@
         "url": "http://www.sarahgp.com"
       }
     ],
-    "desc": "With p5.bots you can interact with your Arduino (or other microprocessor) from within the browser. Use sensor data to drive a sketch; use a sketch to drive LEDs, motors, and more! ",
+    "desc": "With p5.bots you can interact with your Arduino (or other microprocessor) from within the browser. Use sensor data to drive a sketch; use a sketch to drive LEDs, motors, and more!",
     "install": "https://raw.githubusercontent.com/sarahgp/p5bots/master/lib/p5bots.js"
   },
   {
@@ -333,7 +333,7 @@
         "url": "https://github.com/gicentre/handy"
       }
     ],
-    "desc": "Draw 2D primitives in a sketchy look. Created by Janneck Wullschleger, based on a port of the original Processing library ",
+    "desc": "Draw 2D primitives in a sketchy look. Created by Janneck Wullschleger, based on a port of the original Processing library",
     "install": "https://raw.githubusercontent.com/generative-light/p5.scribble.js/master/p5.scribble.js"
   },
   {
