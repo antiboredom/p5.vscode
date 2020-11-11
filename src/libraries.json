@@ -246,7 +246,7 @@
       }
     ],
     "desc": "ml5.js builds on Tensorflow.js and provides friendly access to machine learning algorithms and models in the browser.",
-    "install": "https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"
+    "install": "https://unpkg.com/ml5@latest/dist/ml5.min.js"
   },
   {
     "name": "p5.play",

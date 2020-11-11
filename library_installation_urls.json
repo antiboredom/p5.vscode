@@ -22,7 +22,7 @@
   "p5.localmessage": "https://raw.githubusercontent.com/bmoren/p5.localmessage/master/p5.localmessage.min.js",
   "marching": "https://raw.githubusercontent.com/jtnimoy/marching/master/lib/p5.marching.min.js",
   "mappa": "https://raw.githubusercontent.com/cvalenzuela/Mappa/master/dist/mappa.js",
-  "ml5.js": "https://unpkg.com/ml5@0.4.3/dist/ml5.min.js",
+  "ml5.js": "https://unpkg.com/ml5@latest/dist/ml5.min.js",
   "p5.play": "https://raw.githubusercontent.com/molleindustria/p5.play/master/lib/p5.play.js",
   "p5.particle": "https://rawgit.com/bobcgausa/cook-js/master/p5.particle.js",
   "p5.Riso": "https://raw.githubusercontent.com/antiboredom/p5.riso/master/lib/p5.riso.js",
