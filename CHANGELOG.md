@@ -4,6 +4,12 @@ All notable changes to the "p5-vscode" extension will be documented in this file
 
 ## [Unreleased]
 
+## [1.2.6]
+
+### Fixed
+
+- Fixed link to easycam library (thanks @PlaidDroid)
+
 ## [1.2.5]
 
 ### Fixed
