@@ -1,6 +1,6 @@
 # p5.vscode 
 
-p5.vscode helps you create p5.js projects in Visual Studio Code. It also includes autocompletion, a simple tool to browse and install third-party p5 libraries, and the `Live Server` extension. 
+p5.vscode helps you create p5.js projects in Visual Studio Code. It also includes autocompletion, a simple tool to browse and install third-party p5 libraries, and the `Five Server` extension. 
 
 I made this extension for my students in particular, but I hope it's helpful for anyone using p5. I'm aware there are a few other VS Code extensions that do something similar, but they didn't quite meet my requirements.
 

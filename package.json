@@ -38,7 +38,7 @@
     ]
   },
   "extensionPack": [
-    "ritwickdey.liveserver"
+    "yandeu.five-server"
   ],
   "scripts": {
     "vscode:prepublish": "yarn run compile",
