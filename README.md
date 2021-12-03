@@ -1,3 +1,6 @@
+*I've added simple type script support, ensure you have the typescript compiler installed
+To compile, run ctrl+shift+b and the live server should automatically update
+
 # p5.vscode 
 
 p5.vscode helps you create p5.js projects in Visual Studio Code. It also includes autocompletion, a simple tool to browse and install third-party p5 libraries, and the `Live Server` extension. 
