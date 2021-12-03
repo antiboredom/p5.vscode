@@ -135,9 +135,10 @@ async function copyTemplate(dest: string) {
   const paths: string[] = [
     "index.html",
     "style.css",
-    "sketch.js",
+    "sketch.ts",
     "libraries/p5.min.js",
     "libraries/p5.sound.min.js",
+    ".vscode/.tasks.json",
   ];
 
   const baseSrc = Uri.joinPath(Uri.file(__dirname), "../template");
