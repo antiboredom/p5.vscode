@@ -139,6 +139,7 @@ async function copyTemplate(dest: string) {
     "libraries/p5.min.js",
     "libraries/p5.sound.min.js",
     ".vscode/.tasks.json",
+    "tsconfig.json"
   ];
 
   const baseSrc = Uri.joinPath(Uri.file(__dirname), "../template");
