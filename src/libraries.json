@@ -23,11 +23,11 @@
     "authors": [
       {
         "name": "Yining Shi",
-        "url": "http://1023.io"
+        "url": "https://1023.io"
       },
       {
         "name": "Jingwen Zhu",
-        "url": "http://www.jingwen-zhu.com/"
+        "url": "https://www.jingwen-zhu.com/"
       },
       {
         "name": "Tom Igoe",
@@ -50,6 +50,18 @@
     "install": "https://raw.githubusercontent.com/sarahgp/p5bots/master/lib/p5bots.js"
   },
   {
+    "name": "p5.bezier",
+    "url": "https://github.com/peilingjiang/p5.bezier",
+    "authors": [
+      {
+        "name": "Peiling Jiang",
+        "url": "https://www.jpl.design"
+      }
+    ],
+    "desc": "A library helps draw high-degree Bézier curves with unlimited points.",
+    "install": "https://cdn.jsdelivr.net/npm/p5bezier@latest/lib/p5.bezier.min.js"
+  },
+  {
     "name": "p5.clickable",
     "url": "https://github.com/Lartu/p5.clickable",
     "authors": [
@@ -67,7 +79,7 @@
     "authors": [
       {
         "name": "JT Nimoy",
-        "url": "http://jtnimoy.net"
+        "url": "https://jtnimoy.cc/"
       }
     ],
     "desc": "CMYK ColorSpace",
@@ -79,7 +91,7 @@
     "authors": [
       {
         "name": "Ben Moren",
-        "url": "http://www.benmoren.com/"
+        "url": "https://www.benmoren.com/"
       }
     ],
     "desc": "p5.collide2D provides tools for calculating collision detection for 2D geometry with p5.js.",
@@ -91,7 +103,7 @@
     "authors": [
       {
         "name": "Peter Hayman",
-        "url": "http://www.piratesjustar.com/"
+        "url": "https://www.piratesjustar.com/"
       }
     ],
     "desc": "Create animation loops with noise and GIF exports in one line of code.",
@@ -123,7 +135,7 @@
       }
     ],
     "desc": "Simple 3D camera control with inertial pan, zoom, and rotate. Major contributions by Thomas Diewald.",
-    "install": "https://raw.githubusercontent.com/freshfork/p5.EasyCam/master/p5.easycam.min.js"
+    "install": "https://github.com/freshfork/p5.EasyCam/blob/master/p5.easycam.min.js"
   },
   {
     "name": "p5.experience",
@@ -143,7 +155,7 @@
     "authors": [
       {
         "name": "R. Luke DuBois",
-        "url": "http://lukedubois.com/"
+        "url": "https://lukedubois.com/"
       }
     ],
     "desc": "p5.func is a p5 extension that provides new objects and utilities for function generation in the time, frequency, and spatial domains.",
@@ -155,19 +167,31 @@
     "authors": [
       {
         "name": "Ben Moren",
-        "url": "http://www.benmoren.com/"
+        "url": "https://www.benmoren.com/"
       }
     ],
     "desc": "p5.geolocation provides techniques for acquiring, watching, calculating, and geofencing user locations for p5.js.",
     "install": "https://raw.githubusercontent.com/bmoren/p5.geolocation/master/p5.geolocation.js"
   },
   {
+    "name": "p5.glitch",
+    "url": "https://p5.glitch.me/",
+    "authors": [
+      {
+        "name": "Ted Davis",
+        "url": "https://teddavis.org"
+      }
+    ],
+    "desc": "p5.glitch extends p5.js for glitching images and binary files.",
+    "install": "https://cdn.jsdelivr.net/npm/p5.glitch@latest/p5.glitch.js"
+  },
+  {
     "name": "p5.gibber",
-    "url": "http://charlie-roberts.com/gibber/p5-gibber/",
+    "url": "https://charlie-roberts.com/gibber/p5-gibber/",
     "authors": [
       {
         "name": "Charlie Roberts",
-        "url": "http://charlie-roberts.com"
+        "url": "https://charlie-roberts.com"
       }
     ],
     "desc": "p5.gibber provides rapid music sequencing and audio synthesis capabilities.",
@@ -179,7 +203,7 @@
     "authors": [
       {
         "name": "Javier Graciá Carpio",
-        "url": "http://jagracar.com/p5jsSketches.php"
+        "url": "https://jagracar.com/p5jsSketches.php"
       }
     ],
     "desc": "grafica.js lets you add simple but highly configurable 2D plots to your p5.js sketches.",
@@ -191,7 +215,7 @@
     "authors": [
       {
         "name": "Martin Schneider",
-        "url": "http://www.bitcraftlab.com/"
+        "url": "https://www.bitcraftlab.com/"
       }
     ],
     "desc": "p5.gui generates a graphical user interface for your p5.js sketches.",
@@ -201,12 +225,24 @@
     ]
   },
   {
+    "name": "p5.j5",
+    "url": "https://github.com/monteslu/p5.j5",
+    "authors": [
+      {
+        "name": "Luis Montes",
+        "url": "https://twitter.com/monteslu"
+      }
+    ],
+    "desc": "The full Johnny-Five.io Nodebots/robotics library for Arduino and other  microcontrollers made to work directly in browser with WebSerial or WebUSB.",
+    "install": "https://unpkg.com/p5.j5@1.1.0/dist/p5.j5.min.js"
+  },
+  {
     "name": "p5.localmessage",
     "url": "https://github.com/bmoren/p5.localmessage",
     "authors": [
       {
         "name": "Ben Moren",
-        "url": "http://benmoren.com"
+        "url": "https://benmoren.com"
       }
     ],
     "desc": "p5.localmessage provides a simple interface to send messages locally from one sketch to another for easy multi-window sketching!",
@@ -217,8 +253,8 @@
     "url": "https://github.com/jtnimoy/marching",
     "authors": [
       {
-        "name": "jtnimoy",
-        "url": "http://jtnimoy.net"
+        "name": "JT Nimoy",
+        "url": "https://jtnimoy.cc/"
       }
     ],
     "desc": "Raster to vector conversion, isosurfaces.",
@@ -249,12 +285,36 @@
     "install": "https://unpkg.com/ml5@latest/dist/ml5.min.js"
   },
   {
+    "name": "numero",
+    "url": "https://github.com/nickmcintyre/numero",
+    "authors": [
+      {
+        "name": "Nick McIntyre",
+        "url": "https://mcintyre.io"
+      }
+    ],
+    "desc": "A friendly and intuitive math library for p5.js.",
+    "install": "https://raw.githubusercontent.com/nickmcintyre/numero/main/dist/numero.js"
+  },
+  {
+    "name": "pdl.library",
+    "url": "https://github.com/phywand/pdl-library/",
+    "authors": [
+      {
+        "name": "Ian Lawrence",
+        "url": "https://slowthinkingphysics.net"
+      }
+    ],
+    "desc": "A set of functions and classes to create interactive diagrams for teaching  and learning physics.",
+    "install": "https://raw.githubusercontent.com/phywand/pdl-library/master/__support/pdlEnvironment.js"
+  },
+  {
     "name": "p5.play",
     "url": "http://p5play.molleindustria.org",
     "authors": [
       {
         "name": "Paolo Pedercini",
-        "url": "http://www.molleindustria.org/"
+        "url": "https://www.molleindustria.org/"
       }
     ],
     "desc": "p5.play provides sprites, animations, input and collision functions for games and gamelike applications.",
@@ -273,6 +333,42 @@
     "install": "https://rawgit.com/bobcgausa/cook-js/master/p5.particle.js"
   },
   {
+    "name": "p5.party",
+    "url": "https://github.com/jbakse/p5.party",
+    "authors": [
+      {
+        "name": "Justin Bakse",
+        "url": "http://justinbakse.com"
+      }
+    ],
+    "desc": "p5.party is a library for easily creating networked multiuser games, apps,  and sketches.",
+    "install": "https://cdn.jsdelivr.net/npm/p5.party@latest/dist/p5.party.js"
+  },
+  {
+    "name": "p5.Polar",
+    "url": "https://github.com/liz-peng/p5.Polar",
+    "authors": [
+      {
+        "name": "Liz Peng",
+        "url": "https://github.com/liz-peng"
+      }
+    ],
+    "desc": "p5.Polar provides mathematical abstractions making it easy to create create beautiful, kaleidoscopic, radial patterns.",
+    "install": "https://raw.githubusercontent.com/liz-peng/p5.Polar/master/p5.Polar.min.js"
+  },
+  {
+    "name": "p5.recorder",
+    "url": "https://github.com/doriclaudino/p5.recorder",
+    "authors": [
+      {
+        "name": "Dori Claudino",
+        "url": "https://github.com/doriclaudino"
+      }
+    ],
+    "desc": "Record sketch canvas and audio.",
+    "install": "https://cdn.jsdelivr.net/npm/p5.recorder@latest/dist/p5.recorder.js"
+  },
+  {
     "name": "p5.Riso",
     "url": "https://antiboredom.github.io/p5.riso",
     "authors": [
@@ -282,7 +378,7 @@
       },
       {
         "name": "Tega Brain",
-        "url": "http://tegabrain.com/"
+        "url": "https://tegabrain.com/"
       }
     ],
     "desc": "p5.Riso is a library for generating files suitable for Risograph printing. It helps turn your sketches into multi-color prints.",
@@ -290,15 +386,15 @@
   },
   {
     "name": "rita.js",
-    "url": "http://rednoise.org/rita",
+    "url": "https://rednoise.org/rita",
     "authors": [
       {
         "name": "Daniel C. Howe",
-        "url": "http://rednoise.org/daniel"
+        "url": "https://rednoise.org/daniel"
       }
     ],
     "desc": "RiTa.js provides a set of natural language processing objects for generative literature.",
-    "install": "http://rednoise.org/rita/download/rita-full.min.js"
+    "install": "https://unpkg.com/rita"
   },
   {
     "name": "p5.scenemanager",
@@ -342,7 +438,7 @@
     "authors": [
       {
         "name": "Shawn Van Every",
-        "url": "http://www.walking-productions.com/notslop/abou/"
+        "url": "https://www.walking-productions.com/notslop/abou/"
       },
       {
         "name": "Jen Kagan",
@@ -350,7 +446,7 @@
       },
       {
         "name": "Tom Igoe",
-        "url": "http://tigoe.net/"
+        "url": "https://tigoe.net/"
       }
     ],
     "desc": "p5.serial enables serial communication between devices that support serial (RS-232) and p5 sketches running in the browser.",
@@ -386,7 +482,7 @@
     "authors": [
       {
         "name": "R. Luke DuBois",
-        "url": "http://lukedubois.com/"
+        "url": "https://lukedubois.com/"
       }
     ],
     "desc": "p5.speech provides simple, clear access to the Web Speech and Speech Recognition APIs, allowing for the easy creation of sketches that can talk and listen.",
@@ -410,7 +506,7 @@
     "authors": [
       {
         "name": "Caldas Lopes",
-        "url": "http://softlab.pt/"
+        "url": "https://softlab.pt/"
       }
     ],
     "desc": "p5.tiledmap provides drawing and helper functions to include maps in your sketches.",
@@ -430,15 +526,39 @@
   },
   {
     "name": "tramontana",
-    "url": "http://www.tramontana.xyz",
+    "url": "https://www.tramontana.xyz",
     "authors": [
       {
         "name": "Pierluigi Dalla Rosa",
-        "url": "http://www.pierdr.com"
+        "url": "https://www.pierdr.com"
       }
     ],
     "desc": "Tramontana is a platform for easily use many devices (iOS, Android, tramontana Board, ...) to create interactive environments, interactive spaces or just prototype experiences at scale and in space.",
     "install": "https://pierdr.github.io/Tramontana-for-Javascript/lib/tramontana_min.js"
+  },
+  {
+    "name": "TurtleGFX",
+    "url": "https://github.com/CodeGuppyPrograms/TurtleGFX",
+    "authors": [
+      {
+        "name": "CodeGuppy",
+        "url": "https://codeguppy.com"
+      }
+    ],
+    "desc": "TurtleGFX allows to code with Turtle Graphics in JavaScript.  Great for education and creative coding.",
+    "install": "https://raw.githubusercontent.com/CodeGuppyPrograms/TurtleGFX/master/lib/turtlegfx.js"
+  },
+  {
+    "name": "p5.tween",
+    "url": "https://github.com/Milchreis/p5.tween",
+    "authors": [
+      {
+        "name": "Nick Müller",
+        "url": "https://github.com/Milchreis"
+      }
+    ],
+    "desc": "With p5.tween you can create easily animations as tween for your objects and  shapes.",
+    "install": "https://unpkg.com/p5.tween/dist/p5.tween.min.js"
   },
   {
     "name": "vida",
@@ -468,6 +588,30 @@
     ]
   },
   {
+    "name": "p5.wasm",
+    "url": "https://github.com/limzykenneth/p5.wasm",
+    "authors": [
+      {
+        "name": "Kenneth Lim",
+        "url": "https://github.com/limzykenneth"
+      }
+    ],
+    "desc": "p5.wasm is an addon library written in Rust and compiled to WebAssembly that  implements common functions found in p5.js.",
+    "install": "https://cdn.jsdelivr.net/npm/p5.wasm@0.2.1/dist/p5.wasm.js"
+  },
+  {
+    "name": "p5.xr",
+    "url": "https://p5xr.org/#/",
+    "authors": [
+      {
+        "name": "Stalgia Grigg",
+        "url": "https://www.stalgiagrigg.name/"
+      }
+    ],
+    "desc": "A library for creating VR and AR sketches with p5.",
+    "install": "https://github.com/stalgiag/p5.xr/releases/download/patch/p5xr.js"
+  },
+  {
     "name": "p5.3D",
     "url": "https://github.com/FreddieRa/p5.3D",
     "authors": [
@@ -478,5 +622,17 @@
     ],
     "desc": "3D Text and Images in WebGL.",
     "install": "https://raw.githubusercontent.com/FreddieRa/p5.3D/master/p5.3D.js"
+  },
+  {
+    "name": "WEBMIDI.js",
+    "url": "https://webmidijs.org/",
+    "authors": [
+      {
+        "name": "Jean-Philippe Côté",
+        "url": "https://djip.co"
+      }
+    ],
+    "desc": "Easily send and receive MIDI messages from p5.",
+    "install": "https://cdn.jsdelivr.net/npm/webmidi@next/dist/iife/webmidi.iife.js"
   }
 ]

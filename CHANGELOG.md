@@ -4,6 +4,20 @@ All notable changes to the "p5-vscode" extension will be documented in this file
 
 ## [Unreleased]
 
+## [1.2.8]
+
+### Added
+
+- Added more p5 libraries
+
+### Fixed
+
+- Fixed rita install url
+
+### Changed
+
+- Updated p5
+
 ## [1.2.6]
 
 ### Fixed
