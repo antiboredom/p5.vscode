@@ -6,6 +6,12 @@ All notable changes to the "p5-vscode" extension will be documented in this file
 
 ## [1.2.8]
 
+### Fixed
+
+- Fixed issue where autocomplete stopped working after library update
+
+## [1.2.8]
+
 ### Added
 
 - Added more p5 libraries

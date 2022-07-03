@@ -18,6 +18,90 @@
     "install": "https://www.tetoki.eu/asciiart/asciiart/p5.asciiart.min.js"
   },
   {
+    "name": "grafica.js",
+    "url": "https://github.com/jagracar/grafica.js",
+    "authors": [
+      {
+        "name": "Javier Graciá Carpio",
+        "url": "https://jagracar.com/p5jsSketches.php"
+      }
+    ],
+    "desc": "grafica.js lets you add simple but highly configurable 2D plots to your p5.js sketches.",
+    "install": "https://raw.githubusercontent.com/jagracar/grafica.js/master/lib/grafica.min.js"
+  },
+  {
+    "name": "mappa",
+    "url": "https://github.com/cvalenzuela/Mappa",
+    "authors": [
+      {
+        "name": "Cristóbal Valenzuela",
+        "url": "https://github.com/cvalenzuela/"
+      }
+    ],
+    "desc": "Mappa provides a set of tools for working with static maps, tile maps, and geo-data. Useful when building geolocation-based visual representations.",
+    "install": "https://raw.githubusercontent.com/cvalenzuela/Mappa/master/dist/mappa.js"
+  },
+  {
+    "name": "marching",
+    "url": "https://github.com/jtnimoy/marching",
+    "authors": [
+      {
+        "name": "JT Nimoy",
+        "url": "https://jtnimoy.cc/"
+      }
+    ],
+    "desc": "Raster to vector conversion, isosurfaces.",
+    "install": "https://raw.githubusercontent.com/jtnimoy/marching/master/lib/p5.marching.min.js"
+  },
+  {
+    "name": "ml5.js",
+    "url": "https://ml5js.org/",
+    "authors": [
+      {
+        "name": "NYU ITP/IMA and contributors",
+        "url": "https://ml5js.org/"
+      }
+    ],
+    "desc": "ml5.js builds on Tensorflow.js and provides friendly access to machine learning algorithms and models in the browser.",
+    "install": "https://unpkg.com/ml5@latest/dist/ml5.min.js"
+  },
+  {
+    "name": "numero",
+    "url": "https://github.com/nickmcintyre/numero",
+    "authors": [
+      {
+        "name": "Nick McIntyre",
+        "url": "https://mcintyre.io"
+      }
+    ],
+    "desc": "A friendly and intuitive math library for p5.js.",
+    "install": "https://raw.githubusercontent.com/nickmcintyre/numero/main/dist/numero.js"
+  },
+  {
+    "name": "p5.3D",
+    "url": "https://github.com/FreddieRa/p5.3D",
+    "authors": [
+      {
+        "name": "Freddie Rawlins",
+        "url": "https://freddierawlins.wixsite.com/site"
+      }
+    ],
+    "desc": "3D Text and Images in WebGL.",
+    "install": "https://raw.githubusercontent.com/FreddieRa/p5.3D/master/p5.3D.js"
+  },
+  {
+    "name": "p5.bezier",
+    "url": "https://github.com/peilingjiang/p5.bezier",
+    "authors": [
+      {
+        "name": "Peiling Jiang",
+        "url": "https://www.jpl.design"
+      }
+    ],
+    "desc": "A library helps draw high-degree Bézier curves with unlimited points.",
+    "install": "https://cdn.jsdelivr.net/npm/p5bezier@latest/lib/p5.bezier.min.js"
+  },
+  {
     "name": "p5.ble",
     "url": "https://itpnyu.github.io/p5ble-website/",
     "authors": [
@@ -48,18 +132,6 @@
     ],
     "desc": "With p5.bots you can interact with your Arduino (or other microprocessor) from within the browser. Use sensor data to drive a sketch; use a sketch to drive LEDs, motors, and more!",
     "install": "https://raw.githubusercontent.com/sarahgp/p5bots/master/lib/p5bots.js"
-  },
-  {
-    "name": "p5.bezier",
-    "url": "https://github.com/peilingjiang/p5.bezier",
-    "authors": [
-      {
-        "name": "Peiling Jiang",
-        "url": "https://www.jpl.design"
-      }
-    ],
-    "desc": "A library helps draw high-degree Bézier curves with unlimited points.",
-    "install": "https://cdn.jsdelivr.net/npm/p5bezier@latest/lib/p5.bezier.min.js"
   },
   {
     "name": "p5.clickable",
@@ -174,18 +246,6 @@
     "install": "https://raw.githubusercontent.com/bmoren/p5.geolocation/master/p5.geolocation.js"
   },
   {
-    "name": "p5.glitch",
-    "url": "https://p5.glitch.me/",
-    "authors": [
-      {
-        "name": "Ted Davis",
-        "url": "https://teddavis.org"
-      }
-    ],
-    "desc": "p5.glitch extends p5.js for glitching images and binary files.",
-    "install": "https://cdn.jsdelivr.net/npm/p5.glitch@latest/p5.glitch.js"
-  },
-  {
     "name": "p5.gibber",
     "url": "https://charlie-roberts.com/gibber/p5-gibber/",
     "authors": [
@@ -198,16 +258,16 @@
     "install": "https://raw.githubusercontent.com/charlieroberts/p5.gibber.js/master/dist/p5.gibber.min.js"
   },
   {
-    "name": "grafica.js",
-    "url": "https://github.com/jagracar/grafica.js",
+    "name": "p5.glitch",
+    "url": "https://p5.glitch.me/",
     "authors": [
       {
-        "name": "Javier Graciá Carpio",
-        "url": "https://jagracar.com/p5jsSketches.php"
+        "name": "Ted Davis",
+        "url": "https://teddavis.org"
       }
     ],
-    "desc": "grafica.js lets you add simple but highly configurable 2D plots to your p5.js sketches.",
-    "install": "https://raw.githubusercontent.com/jagracar/grafica.js/master/lib/grafica.min.js"
+    "desc": "p5.glitch extends p5.js for glitching images and binary files.",
+    "install": "https://cdn.jsdelivr.net/npm/p5.glitch@latest/p5.glitch.js"
   },
   {
     "name": "p5.gui",
@@ -249,78 +309,6 @@
     "install": "https://raw.githubusercontent.com/bmoren/p5.localmessage/master/p5.localmessage.min.js"
   },
   {
-    "name": "marching",
-    "url": "https://github.com/jtnimoy/marching",
-    "authors": [
-      {
-        "name": "JT Nimoy",
-        "url": "https://jtnimoy.cc/"
-      }
-    ],
-    "desc": "Raster to vector conversion, isosurfaces.",
-    "install": "https://raw.githubusercontent.com/jtnimoy/marching/master/lib/p5.marching.min.js"
-  },
-  {
-    "name": "mappa",
-    "url": "https://github.com/cvalenzuela/Mappa",
-    "authors": [
-      {
-        "name": "Cristóbal Valenzuela",
-        "url": "https://github.com/cvalenzuela/"
-      }
-    ],
-    "desc": "Mappa provides a set of tools for working with static maps, tile maps, and geo-data. Useful when building geolocation-based visual representations.",
-    "install": "https://raw.githubusercontent.com/cvalenzuela/Mappa/master/dist/mappa.js"
-  },
-  {
-    "name": "ml5.js",
-    "url": "https://ml5js.org/",
-    "authors": [
-      {
-        "name": "NYU ITP/IMA and contributors",
-        "url": "https://ml5js.org/"
-      }
-    ],
-    "desc": "ml5.js builds on Tensorflow.js and provides friendly access to machine learning algorithms and models in the browser.",
-    "install": "https://unpkg.com/ml5@latest/dist/ml5.min.js"
-  },
-  {
-    "name": "numero",
-    "url": "https://github.com/nickmcintyre/numero",
-    "authors": [
-      {
-        "name": "Nick McIntyre",
-        "url": "https://mcintyre.io"
-      }
-    ],
-    "desc": "A friendly and intuitive math library for p5.js.",
-    "install": "https://raw.githubusercontent.com/nickmcintyre/numero/main/dist/numero.js"
-  },
-  {
-    "name": "pdl.library",
-    "url": "https://github.com/phywand/pdl-library/",
-    "authors": [
-      {
-        "name": "Ian Lawrence",
-        "url": "https://slowthinkingphysics.net"
-      }
-    ],
-    "desc": "A set of functions and classes to create interactive diagrams for teaching  and learning physics.",
-    "install": "https://raw.githubusercontent.com/phywand/pdl-library/master/__support/pdlEnvironment.js"
-  },
-  {
-    "name": "p5.play",
-    "url": "http://p5play.molleindustria.org",
-    "authors": [
-      {
-        "name": "Paolo Pedercini",
-        "url": "https://www.molleindustria.org/"
-      }
-    ],
-    "desc": "p5.play provides sprites, animations, input and collision functions for games and gamelike applications.",
-    "install": "https://raw.githubusercontent.com/molleindustria/p5.play/master/lib/p5.play.js"
-  },
-  {
     "name": "p5.particle",
     "url": "https://github.com/bobcgausa/cook-js",
     "authors": [
@@ -343,6 +331,18 @@
     ],
     "desc": "p5.party is a library for easily creating networked multiuser games, apps,  and sketches.",
     "install": "https://cdn.jsdelivr.net/npm/p5.party@latest/dist/p5.party.js"
+  },
+  {
+    "name": "p5.play",
+    "url": "http://p5play.molleindustria.org",
+    "authors": [
+      {
+        "name": "Paolo Pedercini",
+        "url": "https://www.molleindustria.org/"
+      }
+    ],
+    "desc": "p5.play provides sprites, animations, input and collision functions for games and gamelike applications.",
+    "install": "https://raw.githubusercontent.com/molleindustria/p5.play/master/lib/p5.play.js"
   },
   {
     "name": "p5.Polar",
@@ -383,18 +383,6 @@
     ],
     "desc": "p5.Riso is a library for generating files suitable for Risograph printing. It helps turn your sketches into multi-color prints.",
     "install": "https://raw.githubusercontent.com/antiboredom/p5.riso/master/lib/p5.riso.js"
-  },
-  {
-    "name": "rita.js",
-    "url": "https://rednoise.org/rita",
-    "authors": [
-      {
-        "name": "Daniel C. Howe",
-        "url": "https://rednoise.org/daniel"
-      }
-    ],
-    "desc": "RiTa.js provides a set of natural language processing objects for generative literature.",
-    "install": "https://unpkg.com/rita"
   },
   {
     "name": "p5.scenemanager",
@@ -451,18 +439,6 @@
     ],
     "desc": "p5.serial enables serial communication between devices that support serial (RS-232) and p5 sketches running in the browser.",
     "install": "https://raw.githubusercontent.com/p5-serial/p5.serialport/master/lib/p5.serialport.js"
-  },
-  {
-    "name": "Shape5",
-    "url": "https://github.com/pfe1223/Shape5js",
-    "authors": [
-      {
-        "name": "Patrick Ester",
-        "url": "https://github.com/pfe1223"
-      }
-    ],
-    "desc": "Shape5 is a 2D primative library for elementary students who are learning to code for the first time.",
-    "install": "https://raw.githubusercontent.com/pfe1223/Shape5js/master/shape5.js"
   },
   {
     "name": "p5.shape.js",
@@ -525,30 +501,6 @@
     "install": "https://raw.githubusercontent.com/L05/p5.touchgui/master/lib/p5.touchgui.js"
   },
   {
-    "name": "tramontana",
-    "url": "https://www.tramontana.xyz",
-    "authors": [
-      {
-        "name": "Pierluigi Dalla Rosa",
-        "url": "https://www.pierdr.com"
-      }
-    ],
-    "desc": "Tramontana is a platform for easily use many devices (iOS, Android, tramontana Board, ...) to create interactive environments, interactive spaces or just prototype experiences at scale and in space.",
-    "install": "https://pierdr.github.io/Tramontana-for-Javascript/lib/tramontana_min.js"
-  },
-  {
-    "name": "TurtleGFX",
-    "url": "https://github.com/CodeGuppyPrograms/TurtleGFX",
-    "authors": [
-      {
-        "name": "CodeGuppy",
-        "url": "https://codeguppy.com"
-      }
-    ],
-    "desc": "TurtleGFX allows to code with Turtle Graphics in JavaScript.  Great for education and creative coding.",
-    "install": "https://raw.githubusercontent.com/CodeGuppyPrograms/TurtleGFX/master/lib/turtlegfx.js"
-  },
-  {
     "name": "p5.tween",
     "url": "https://github.com/Milchreis/p5.tween",
     "authors": [
@@ -559,18 +511,6 @@
     ],
     "desc": "With p5.tween you can create easily animations as tween for your objects and  shapes.",
     "install": "https://unpkg.com/p5.tween/dist/p5.tween.min.js"
-  },
-  {
-    "name": "vida",
-    "url": "https://tetoki.eu/vida",
-    "authors": [
-      {
-        "name": "Pawel Janicki",
-        "url": "https://paweljanicki.jp"
-      }
-    ],
-    "desc": "Vida is a simple library that adds camera (or video) based motion detection and blob tracking functionality to p5js.",
-    "install": "https://www.tetoki.eu/vida/vida/p5.vida.min.js"
   },
   {
     "name": "p5.voronoi",
@@ -612,16 +552,76 @@
     "install": "https://github.com/stalgiag/p5.xr/releases/download/patch/p5xr.js"
   },
   {
-    "name": "p5.3D",
-    "url": "https://github.com/FreddieRa/p5.3D",
+    "name": "pdl.library",
+    "url": "https://github.com/phywand/pdl-library/",
     "authors": [
       {
-        "name": "Freddie Rawlins",
-        "url": "https://freddierawlins.wixsite.com/site"
+        "name": "Ian Lawrence",
+        "url": "https://slowthinkingphysics.net"
       }
     ],
-    "desc": "3D Text and Images in WebGL.",
-    "install": "https://raw.githubusercontent.com/FreddieRa/p5.3D/master/p5.3D.js"
+    "desc": "A set of functions and classes to create interactive diagrams for teaching  and learning physics.",
+    "install": "https://raw.githubusercontent.com/phywand/pdl-library/master/__support/pdlEnvironment.js"
+  },
+  {
+    "name": "rita.js",
+    "url": "https://rednoise.org/rita",
+    "authors": [
+      {
+        "name": "Daniel C. Howe",
+        "url": "https://rednoise.org/daniel"
+      }
+    ],
+    "desc": "RiTa.js provides a set of natural language processing objects for generative literature.",
+    "install": "https://unpkg.com/rita"
+  },
+  {
+    "name": "Shape5",
+    "url": "https://github.com/pfe1223/Shape5js",
+    "authors": [
+      {
+        "name": "Patrick Ester",
+        "url": "https://github.com/pfe1223"
+      }
+    ],
+    "desc": "Shape5 is a 2D primative library for elementary students who are learning to code for the first time.",
+    "install": "https://raw.githubusercontent.com/pfe1223/Shape5js/master/shape5.js"
+  },
+  {
+    "name": "tramontana",
+    "url": "https://www.tramontana.xyz",
+    "authors": [
+      {
+        "name": "Pierluigi Dalla Rosa",
+        "url": "https://www.pierdr.com"
+      }
+    ],
+    "desc": "Tramontana is a platform for easily use many devices (iOS, Android, tramontana Board, ...) to create interactive environments, interactive spaces or just prototype experiences at scale and in space.",
+    "install": "https://pierdr.github.io/Tramontana-for-Javascript/lib/tramontana_min.js"
+  },
+  {
+    "name": "TurtleGFX",
+    "url": "https://github.com/CodeGuppyPrograms/TurtleGFX",
+    "authors": [
+      {
+        "name": "CodeGuppy",
+        "url": "https://codeguppy.com"
+      }
+    ],
+    "desc": "TurtleGFX allows to code with Turtle Graphics in JavaScript.  Great for education and creative coding.",
+    "install": "https://raw.githubusercontent.com/CodeGuppyPrograms/TurtleGFX/master/lib/turtlegfx.js"
+  },
+  {
+    "name": "vida",
+    "url": "https://tetoki.eu/vida",
+    "authors": [
+      {
+        "name": "Pawel Janicki",
+        "url": "https://paweljanicki.jp"
+      }
+    ],
+    "desc": "Vida is a simple library that adds camera (or video) based motion detection and blob tracking functionality to p5js.",
+    "install": "https://www.tetoki.eu/vida/vida/p5.vida.min.js"
   },
   {
     "name": "WEBMIDI.js",

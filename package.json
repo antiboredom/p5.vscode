@@ -3,7 +3,7 @@
   "publisher": "samplavigne",
   "displayName": "p5.vscode",
   "description": "Create and manage p5.js projects.",
-  "version": "1.2.9",
+  "version": "1.2.10",
   "repository": "https://github.com/antiboredom/p5.vscode",
   "engines": {
     "vscode": "^1.47.0"
@@ -22,7 +22,8 @@
   "icon": "images/asterisk.png",
   "activationEvents": [
     "onCommand:p5-vscode.createProject",
-    "onCommand:p5-vscode.installLibrary"
+    "onCommand:p5-vscode.installLibrary",
+    "workspaceContains:sketch.js"
   ],
   "main": "./out/extension.js",
   "contributes": {

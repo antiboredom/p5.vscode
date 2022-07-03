@@ -12,6 +12,8 @@ const Uri = vscode.Uri;
 const vsfs = vscode.workspace.fs;
 
 export async function activate(context: vscode.ExtensionContext) {
+  updateJSConfig();
+
   let createProject = vscode.commands.registerCommand(
     "p5-vscode.createProject",
     async () => {
@@ -175,6 +177,29 @@ async function copyTemplate(dest: string) {
   };
   const jsconfigPath = Uri.joinPath(baseDest, "jsconfig.json");
   writeFileSync(jsconfigPath.fsPath, JSON.stringify(jsconfig, null, 2));
+}
+
+async function updateJSConfig() {
+  const workspacePath = vscode.workspace.rootPath;
+  if (!workspacePath) {
+    return false;
+  }
+  const jsconfigPath = path.join(workspacePath, "jsconfig.json");
+  const defPath = Uri.joinPath(Uri.file(__dirname), "../p5types", "global.d.ts").fsPath;
+  vscode.window.showInformationMessage(jsconfigPath);
+  vscode.window.showInformationMessage(defPath);
+  if (!existsSync(jsconfigPath)) {
+    vscode.window.showInformationMessage("no config");
+    return false;
+  }
+  const jsconfig = {
+    include: [
+      "*.js",
+      "libraries/*.js",
+      defPath
+    ],
+  };
+  writeFileSync(jsconfigPath, JSON.stringify(jsconfig, null, 2));
 }
 
 // this method is called when your extension is deactivated
