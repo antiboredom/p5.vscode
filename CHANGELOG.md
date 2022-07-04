@@ -4,7 +4,15 @@ All notable changes to the "p5-vscode" extension will be documented in this file
 
 ## [Unreleased]
 
-## [1.2.8]
+## [1.2.11]
+
+### Added
+
+- Added more p5 libraries
+
+### Fixed
+
+## [1.2.10]
 
 ### Fixed
 
