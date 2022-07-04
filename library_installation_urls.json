@@ -64,5 +64,13 @@
   "p5.wasm": "https://cdn.jsdelivr.net/npm/p5.wasm@0.2.1/dist/p5.wasm.js",
   "p5.xr": "https://github.com/stalgiag/p5.xr/releases/download/patch/p5xr.js",
   "p5.PatGrad": "https://cdn.jsdelivr.net/gh/antiboredom/p5.patgrad/p5.patgrad.js",
+  "p5.animS": "https://raw.githubusercontent.com/wixette/p5.animS/main/build/p5.anims.min.js",
+  "p5.capture": "https://cdn.jsdelivr.net/npm/p5.capture@1.2.0/dist/p5.capture.umd.min.js",
+  "p5.jacdac": "https://cdn.jsdelivr.net/npm/p5.capture@1.2.0/dist/p5.capture.umd.min.js",
+  "p5.FrameBuffer": "https://cdn.jsdelivr.net/npm/@davepagurek/p5.framebuffer@0.0.1/p5.Framebuffer.min.js",
+  "p5.projection": [
+    "https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.5.1/math.js",
+    "https://cdn.jsdelivr.net/gh/osresearch/p5.projection@0.2.1/library/p5.projection.js"
+  ],
   "WEBMIDI.js": "https://cdn.jsdelivr.net/npm/webmidi@next/dist/iife/webmidi.iife.js"
 }

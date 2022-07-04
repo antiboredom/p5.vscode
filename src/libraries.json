@@ -90,6 +90,18 @@
     "install": "https://raw.githubusercontent.com/FreddieRa/p5.3D/master/p5.3D.js"
   },
   {
+    "name": "p5.animS",
+    "url": "https://wixette.github.io/p5.animS/",
+    "authors": [
+      {
+        "name": "Yonggang Wang",
+        "url": "https://github.com/wixette"
+      }
+    ],
+    "desc": "p5.animS animates p5.js shapes by rendering their drawing processes.",
+    "install": "https://raw.githubusercontent.com/wixette/p5.animS/main/build/p5.anims.min.js"
+  },
+  {
     "name": "p5.bezier",
     "url": "https://github.com/peilingjiang/p5.bezier",
     "authors": [
@@ -132,6 +144,18 @@
     ],
     "desc": "With p5.bots you can interact with your Arduino (or other microprocessor) from within the browser. Use sensor data to drive a sketch; use a sketch to drive LEDs, motors, and more!",
     "install": "https://raw.githubusercontent.com/sarahgp/p5bots/master/lib/p5bots.js"
+  },
+  {
+    "name": "p5.capture",
+    "url": "https://github.com/tapioca24/p5.capture",
+    "authors": [
+      {
+        "name": "tapioca24",
+        "url": "https://github.com/tapioca24"
+      }
+    ],
+    "desc": "p5.capture provides a simple GUI to easily record p5.js animations and output  video files in various formats (webm, gif, mp4, png, jpg, and webp).",
+    "install": "https://cdn.jsdelivr.net/npm/p5.capture@1.2.0/dist/p5.capture.umd.min.js"
   },
   {
     "name": "p5.clickable",
@@ -297,6 +321,18 @@
     "install": "https://unpkg.com/p5.j5@1.1.0/dist/p5.j5.min.js"
   },
   {
+    "name": "p5.jacdac",
+    "url": "https://microsoft.github.io/jacdac-docs/clients/javascript/p5js/ ",
+    "authors": [
+      {
+        "name": "Jonathan de Halleux",
+        "url": "https://twitter.com/pelikhan"
+      }
+    ],
+    "desc": "Plug-and-play micro-controllers for p5js",
+    "install": "https://cdn.jsdelivr.net/npm/p5.capture@1.2.0/dist/p5.capture.umd.min.js"
+  },
+  {
     "name": "p5.localmessage",
     "url": "https://github.com/bmoren/p5.localmessage",
     "authors": [
@@ -333,6 +369,18 @@
     "install": "https://cdn.jsdelivr.net/npm/p5.party@latest/dist/p5.party.js"
   },
   {
+    "name": "p5.PatGrad",
+    "url": "https://github.com/antiboredom/p5.patgrad",
+    "authors": [
+      {
+        "name": "Sam Lavigne",
+        "url": "https://lav.io"
+      }
+    ],
+    "desc": "p5.PatGrad let's you add patterns and gradients to your sketches.",
+    "install": "https://cdn.jsdelivr.net/gh/antiboredom/p5.patgrad/p5.patgrad.js"
+  },
+  {
     "name": "p5.play",
     "url": "http://p5play.molleindustria.org",
     "authors": [
@@ -355,6 +403,21 @@
     ],
     "desc": "p5.Polar provides mathematical abstractions making it easy to create create beautiful, kaleidoscopic, radial patterns.",
     "install": "https://raw.githubusercontent.com/liz-peng/p5.Polar/master/p5.Polar.min.js"
+  },
+  {
+    "name": "p5.projection",
+    "url": "https://osresearch.github.io/p5.projection/",
+    "authors": [
+      {
+        "name": "Trammell Hudson",
+        "url": "https://trmm.net/"
+      }
+    ],
+    "desc": "Easy projection mapping of sketches onto real world surfaces",
+    "install": [
+      "https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.5.1/math.js",
+      "https://cdn.jsdelivr.net/gh/osresearch/p5.projection@0.2.1/library/p5.projection.js"
+    ]
   },
   {
     "name": "p5.recorder",
