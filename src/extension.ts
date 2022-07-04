@@ -186,10 +186,7 @@ async function updateJSConfig() {
   }
   const jsconfigPath = path.join(workspacePath, "jsconfig.json");
   const defPath = Uri.joinPath(Uri.file(__dirname), "../p5types", "global.d.ts").fsPath;
-  vscode.window.showInformationMessage(jsconfigPath);
-  vscode.window.showInformationMessage(defPath);
   if (!existsSync(jsconfigPath)) {
-    vscode.window.showInformationMessage("no config");
     return false;
   }
   const jsconfig = {
