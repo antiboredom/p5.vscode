@@ -12,7 +12,7 @@ const Uri = vscode.Uri;
 const vsfs = vscode.workspace.fs;
 
 export async function activate(context: vscode.ExtensionContext) {
-  updateJSConfig();
+  updateJSConfig(context);
 
   let createProject = vscode.commands.registerCommand(
     "p5-vscode.createProject",
@@ -171,7 +171,7 @@ async function copyTemplate(dest: string) {
   const jsconfig = {
     include: [
       "*.js",
-      "libraries/*.js",
+      "**/*.js",
       Uri.joinPath(Uri.file(__dirname), "../p5types", "global.d.ts").fsPath,
     ],
   };
@@ -179,24 +179,23 @@ async function copyTemplate(dest: string) {
   writeFileSync(jsconfigPath.fsPath, JSON.stringify(jsconfig, null, 2));
 }
 
-async function updateJSConfig() {
+async function updateJSConfig(context: vscode.ExtensionContext) {
   const workspacePath = vscode.workspace.rootPath;
   if (!workspacePath) {
     return false;
   }
   const jsconfigPath = path.join(workspacePath, "jsconfig.json");
-  const defPath = Uri.joinPath(Uri.file(__dirname), "../p5types", "global.d.ts").fsPath;
   if (!existsSync(jsconfigPath)) {
     return false;
   }
-  const jsconfig = {
-    include: [
-      "*.js",
-      "libraries/*.js",
-      defPath
-    ],
-  };
-  writeFileSync(jsconfigPath, JSON.stringify(jsconfig, null, 2));
+  let jsconfigContents = readFileSync(jsconfigPath, "utf-8");
+  const extensionName = context.extension.id;
+  const currentName = extensionName + "-" + context.extension.packageJSON.version;
+  const regex = new RegExp(extensionName + "-[0-9.]+", "m");
+  if (regex.test(jsconfigContents)) {
+    jsconfigContents = jsconfigContents.replace(regex, currentName);
+    writeFileSync(jsconfigPath, jsconfigContents);
+  }
 }
 
 // this method is called when your extension is deactivated
