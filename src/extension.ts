@@ -138,6 +138,7 @@ async function copyTemplate(dest: string) {
     "index.html",
     "style.css",
     "sketch.js",
+    "libraries/p5.js",
     "libraries/p5.min.js",
     "libraries/p5.sound.min.js",
   ];
