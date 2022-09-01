@@ -1,11 +1,5 @@
 [
   {
-    "name": "p5.accessibility",
-    "url": "https://github.com/processing/p5.accessibility",
-    "desc": "p5.accessibility makes the p5 canvas more accessible to people who are blind and visually impaired.",
-    "install": "https://raw.githubusercontent.com/processing/p5.accessibility/master/dist/p5.accessibility.js"
-  },
-  {
     "name": "asciiart",
     "url": "https://tetoki.eu/asciiart",
     "authors": [
@@ -16,6 +10,30 @@
     ],
     "desc": "p5.asciiart is a simple and easy to use image - to - ASCII art converter for p5js.",
     "install": "https://www.tetoki.eu/asciiart/asciiart/p5.asciiart.min.js"
+  },
+  {
+    "name": "c2.js",
+    "url": "https://c2js.org/",
+    "authors": [
+      {
+        "name": "Ren Yuan",
+        "url": "https://renyuan.io/"
+      }
+    ],
+    "desc": "c2.js is a JavaScript library for creative coding based on computational  geometry, physics simulation, evolutionary algorithm and other modules.",
+    "install": "https://raw.githubusercontent.com/ren-yuan/c2.js/main/dist/c2.min.js"
+  },
+  {
+    "name": "Concave Hull",
+    "url": "https://github.com/markroland/concaveHullJS",
+    "authors": [
+      {
+        "name": "Mark Roland",
+        "url": "https://markroland.com"
+      }
+    ],
+    "desc": "Calculate a Concave Hull from a set of points in 2D space.",
+    "install": "https://raw.githubusercontent.com/markroland/concaveHullJS/master/src/concaveHull.js"
   },
   {
     "name": "grafica.js",
@@ -484,26 +502,6 @@
     "install": "https://raw.githubusercontent.com/generative-light/p5.scribble.js/master/p5.scribble.js"
   },
   {
-    "name": "p5.serial",
-    "url": "https://github.com/vanevery/p5.serialport",
-    "authors": [
-      {
-        "name": "Shawn Van Every",
-        "url": "https://www.walking-productions.com/notslop/abou/"
-      },
-      {
-        "name": "Jen Kagan",
-        "url": "https://kaganjd.github.io/portfolio/"
-      },
-      {
-        "name": "Tom Igoe",
-        "url": "https://tigoe.net/"
-      }
-    ],
-    "desc": "p5.serial enables serial communication between devices that support serial (RS-232) and p5 sketches running in the browser.",
-    "install": "https://raw.githubusercontent.com/p5-serial/p5.serialport/master/lib/p5.serialport.js"
-  },
-  {
     "name": "p5.shape.js",
     "url": "https://github.com/gaba5/p5.shape.js",
     "authors": [
@@ -550,6 +548,18 @@
     ],
     "desc": "p5.tiledmap provides drawing and helper functions to include maps in your sketches.",
     "install": "https://raw.githubusercontent.com/linux-man/p5.tiledmap/master/p5.tiledmap.min.js"
+  },
+  {
+    "name": "p5.timer",
+    "url": "https://github.com/scottkildall/p5.timer",
+    "authors": [
+      {
+        "name": "Scott Kildall",
+        "url": "https://www.kildall.com"
+      }
+    ],
+    "desc": "This library performs asynchronous timing functions like countdowns,  one-shot timers, % time elapsed and encapsulates the millis() function and  other related calculations that often clog up your code. ",
+    "install": "https://raw.githubusercontent.com/scottkildall/p5.timer/master/p5.timer.js"
   },
   {
     "name": "p5.touchgui",
