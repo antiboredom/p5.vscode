@@ -1,4 +1,13 @@
-# p5.vscode 
+# p5.vscode - CS30 Variant
+
+This is a slightly adapted version of Sam Lavigne's p5.vscode extension. The relevant changes are:
+
+- index.html file from the template links to the un-minified version of p5.js by default, which allows for the use of the FES (Friendly Error System) built into p5.js.
+- includes an .eslintrc.json file in the template folder. All p5.js functions/variables are included as globals (to avoid having them trigger non-used variable/function warnings).
+- includes the ESLint extension as part of the bundle.
+- for any of the ESLint functionality to work, the student must install [nodejs](https://nodejs.org/), then run `npm install -g eslint` (this is only required one time, and should work on all future projects).
+
+# p5.vscode - Original Info
 
 p5.vscode helps you create p5.js projects in Visual Studio Code. It also includes autocompletion, a simple tool to browse and install third-party p5 libraries, and the `Live Server` extension. 
 
@@ -11,7 +20,6 @@ I made this extension for my students in particular, but I hope it's helpful for
 1. Open the Command Palette (with `command-shift-p` on Mac, or `ctrl-shift-p` on Windows) and then start typing and select `Create p5.js Project`. 
 2. Select a new empty folder to put your project in.
 3. (optional) click the "Go Live" button in the bottom status bar to open your sketch in a browser
-4. Abolish cops.
 
 ### To install p5 libraries:
 

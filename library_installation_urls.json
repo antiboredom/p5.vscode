@@ -72,5 +72,9 @@
     "https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.5.1/math.js",
     "https://cdn.jsdelivr.net/gh/osresearch/p5.projection@0.2.1/library/p5.projection.js"
   ],
-  "WEBMIDI.js": "https://cdn.jsdelivr.net/npm/webmidi@next/dist/iife/webmidi.iife.js"
+  "WEBMIDI.js": "https://cdn.jsdelivr.net/npm/webmidi@next/dist/iife/webmidi.iife.js",
+  "p5.timer": "https://raw.githubusercontent.com/scottkildall/p5.timer/master/p5.timer.js",
+  "c2.js": "https://raw.githubusercontent.com/ren-yuan/c2.js/main/dist/c2.min.js",
+  "C02Budget.js": "https://raw.githubusercontent.com/OlafVal/CO2Budget.js/master/Co2Budget.js",
+  "Concave Hull": "https://raw.githubusercontent.com/markroland/concaveHullJS/master/src/concaveHull.js"
 }

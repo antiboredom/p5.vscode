@@ -1,10 +1,10 @@
 {
-  "name": "p5-vscode",
-  "publisher": "samplavigne",
-  "displayName": "p5.vscode",
-  "description": "Create and manage p5.js projects.",
-  "version": "1.2.11",
-  "repository": "https://github.com/antiboredom/p5.vscode",
+  "name": "cs30-p5",
+  "publisher": "wmcicompsci",
+  "displayName": "cs30-p5",
+  "description": "Create and manage p5.js projects. Schellenberg customized the template to work well for CS30, but this is just a slight adaptation of the p5.vscode extension by Sam Lavigne.",
+  "version": "1.4.0",
+  "repository": "https://github.com/schellenberg/p5.vscode",
   "engines": {
     "vscode": "^1.47.0"
   },
@@ -13,8 +13,7 @@
     "Programming Languages"
   ],
   "keywords": [
-    "p5.js",
-    "p5",
+    "cs30",
     "generator",
     "project",
     "template"
@@ -39,14 +38,15 @@
     ]
   },
   "extensionPack": [
-    "ritwickdey.liveserver"
+    "ritwickdey.liveserver",
+    "dbaeumer.vscode-eslint"
   ],
   "scripts": {
-    "vscode:prepublish": "yarn run compile",
+    "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
     "lint": "eslint src --ext ts",
     "watch": "tsc -watch -p ./",
-    "pretest": "yarn run compile && yarn run lint",
+    "pretest": "npm run compile && npm run lint",
     "test": "node ./out/test/runTest.js",
     "update-libraries": "node create_library_json.js",
     "update-p5": "./update-p5.sh"
