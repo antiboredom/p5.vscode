@@ -455,7 +455,9 @@
       "collideRectPoly": true,
       "collideLinePoly": true,
       "collidePolyPoly": true,
-      "collidePointTriangle": true
+      "collidePointTriangle": true,
+
+      "deltaTime": true
     }
   }
 }
