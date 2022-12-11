@@ -169,6 +169,9 @@ async function copyTemplate(dest: string) {
 
   // creates a jsonconfig that tells vscode where to find the types file
   const jsconfig = {
+    "compilerOptions": {
+      "target": "es6",
+    },
     include: [
       "*.js",
       "**/*.js",
