@@ -171,9 +171,12 @@ async function copyTemplate(dest: string) {
 
   // creates a jsonconfig that tells vscode where to find the types file
   const jsconfig = {
+    "compilerOptions": {
+      "target": "es6",
+    },
     include: [
       "*.js",
-      "libraries/*.js",
+      "**/*.js",
       Uri.joinPath(Uri.file(__dirname), "../p5types", "global.d.ts").fsPath,
     ],
   };
