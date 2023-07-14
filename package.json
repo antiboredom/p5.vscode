@@ -3,7 +3,7 @@
   "publisher": "samplavigne",
   "displayName": "p5.vscode",
   "description": "Create and manage p5.js projects.",
-  "version": "1.2.13",
+  "version": "1.2.14",
   "repository": "https://github.com/antiboredom/p5.vscode",
   "engines": {
     "vscode": "^1.68.0"
