@@ -1,6 +1,9 @@
 {
   "p5.sound": null,
-  "p5.accessibility": "https://raw.githubusercontent.com/processing/p5.accessibility/master/dist/p5.accessibility.js",
+  "p5play": [
+    "https://p5play.org/v3/p5play.js",
+    "https://p5play.org/v3/planck.min.js"
+  ],
   "asciiart": "https://www.tetoki.eu/asciiart/asciiart/p5.asciiart.min.js",
   "p5.ble": "https://unpkg.com/p5ble/dist/p5.ble.js",
   "p5.bots": "https://raw.githubusercontent.com/sarahgp/p5bots/master/lib/p5bots.js",
@@ -23,7 +26,6 @@
   "marching": "https://raw.githubusercontent.com/jtnimoy/marching/master/lib/p5.marching.min.js",
   "mappa": "https://raw.githubusercontent.com/cvalenzuela/Mappa/master/dist/mappa.js",
   "ml5.js": "https://unpkg.com/ml5@latest/dist/ml5.min.js",
-  "p5.play": "https://raw.githubusercontent.com/molleindustria/p5.play/master/lib/p5.play.js",
   "p5.particle": "https://rawgit.com/bobcgausa/cook-js/master/p5.particle.js",
   "p5.Riso": "https://raw.githubusercontent.com/antiboredom/p5.riso/master/lib/p5.riso.js",
   "rita.js": "https://unpkg.com/rita",
