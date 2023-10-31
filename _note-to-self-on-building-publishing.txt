@@ -1,0 +1,4 @@
+npm install -g @vscode/vsce
+npm install typescript
+vsce package
+vsce publish minor  OR vsce publish 1.7.0     (can just edit package.json to the version you want...)
