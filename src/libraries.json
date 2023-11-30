@@ -20,7 +20,7 @@
         "url": "https://renyuan.io/"
       }
     ],
-    "desc": "c2.js is a JavaScript library for creative coding based on computational  geometry, physics simulation, evolutionary algorithm and other modules.",
+    "desc": "c2.js is a JavaScript library for creative coding based on computational geometry, physics simulation, evolutionary algorithm and other modules.",
     "install": "https://raw.githubusercontent.com/ren-yuan/c2.js/main/dist/c2.min.js"
   },
   {
@@ -94,6 +94,25 @@
     ],
     "desc": "A friendly and intuitive math library for p5.js.",
     "install": "https://raw.githubusercontent.com/nickmcintyre/numero/main/dist/numero.js"
+  },
+  {
+    "name": "p5play",
+    "url": "https://p5play.org",
+    "authors": [
+      {
+        "name": "Quinton Ashley",
+        "url": "https://www.youtube.com/@p5play_quinton-ashley"
+      },
+      {
+        "name": "Paolo Pedercini",
+        "url": "https://www.molleindustria.org/"
+      }
+    ],
+    "desc": "p5play is for creating interactive art and games with the Box2D physics engine. It provides sprites, animations, improved input detection, and more!",
+    "install": [
+      "https://cdn.jsdelivr.net/npm/p5play@3/planck.min.js",
+      "https://cdn.jsdelivr.net/npm/p5play@3/p5play.js"
+    ]
   },
   {
     "name": "p5.3D",
@@ -172,7 +191,7 @@
         "url": "https://github.com/tapioca24"
       }
     ],
-    "desc": "p5.capture provides a simple GUI to easily record p5.js animations and output  video files in various formats (webm, gif, mp4, png, jpg, and webp).",
+    "desc": "p5.capture provides a simple GUI to easily record p5.js animations and output video files in various formats (webm, gif, mp4, png, jpg, and webp).",
     "install": "https://cdn.jsdelivr.net/npm/p5.capture@1.2.0/dist/p5.capture.umd.min.js"
   },
   {
@@ -335,7 +354,7 @@
         "url": "https://twitter.com/monteslu"
       }
     ],
-    "desc": "The full Johnny-Five.io Nodebots/robotics library for Arduino and other  microcontrollers made to work directly in browser with WebSerial or WebUSB.",
+    "desc": "The full Johnny-Five.io Nodebots/robotics library for Arduino and other microcontrollers made to work directly in browser with WebSerial or WebUSB.",
     "install": "https://unpkg.com/p5.j5@1.1.0/dist/p5.j5.min.js"
   },
   {
@@ -383,7 +402,7 @@
         "url": "http://justinbakse.com"
       }
     ],
-    "desc": "p5.party is a library for easily creating networked multiuser games, apps,  and sketches.",
+    "desc": "p5.party is a library for easily creating networked multiuser games, apps, and sketches.",
     "install": "https://cdn.jsdelivr.net/npm/p5.party@latest/dist/p5.party.js"
   },
   {
@@ -397,18 +416,6 @@
     ],
     "desc": "p5.PatGrad let's you add patterns and gradients to your sketches.",
     "install": "https://cdn.jsdelivr.net/gh/antiboredom/p5.patgrad/p5.patgrad.js"
-  },
-  {
-    "name": "p5.play",
-    "url": "http://p5play.molleindustria.org",
-    "authors": [
-      {
-        "name": "Paolo Pedercini",
-        "url": "https://www.molleindustria.org/"
-      }
-    ],
-    "desc": "p5.play provides sprites, animations, input and collision functions for games and gamelike applications.",
-    "install": "https://raw.githubusercontent.com/molleindustria/p5.play/master/lib/p5.play.js"
   },
   {
     "name": "p5.Polar",
@@ -558,7 +565,7 @@
         "url": "https://www.kildall.com"
       }
     ],
-    "desc": "This library performs asynchronous timing functions like countdowns,  one-shot timers, % time elapsed and encapsulates the millis() function and  other related calculations that often clog up your code. ",
+    "desc": "This library performs asynchronous timing functions like countdowns, one-shot timers, % time elapsed and encapsulates the millis() function and other related calculations that often clog up your code.",
     "install": "https://raw.githubusercontent.com/scottkildall/p5.timer/master/p5.timer.js"
   },
   {
@@ -582,7 +589,7 @@
         "url": "https://github.com/Milchreis"
       }
     ],
-    "desc": "With p5.tween you can create easily animations as tween for your objects and  shapes.",
+    "desc": "With p5.tween you can create easily animations as tween for your objects and shapes.",
     "install": "https://unpkg.com/p5.tween/dist/p5.tween.min.js"
   },
   {
@@ -609,7 +616,7 @@
         "url": "https://github.com/limzykenneth"
       }
     ],
-    "desc": "p5.wasm is an addon library written in Rust and compiled to WebAssembly that  implements common functions found in p5.js.",
+    "desc": "p5.wasm is an addon library written in Rust and compiled to WebAssembly that implements common functions found in p5.js.",
     "install": "https://cdn.jsdelivr.net/npm/p5.wasm@0.2.1/dist/p5.wasm.js"
   },
   {
@@ -633,7 +640,7 @@
         "url": "https://slowthinkingphysics.net"
       }
     ],
-    "desc": "A set of functions and classes to create interactive diagrams for teaching  and learning physics.",
+    "desc": "A set of functions and classes to create interactive diagrams for teaching and learning physics.",
     "install": "https://raw.githubusercontent.com/phywand/pdl-library/master/__support/pdlEnvironment.js"
   },
   {
@@ -681,7 +688,7 @@
         "url": "https://codeguppy.com"
       }
     ],
-    "desc": "TurtleGFX allows to code with Turtle Graphics in JavaScript.  Great for education and creative coding.",
+    "desc": "TurtleGFX allows to code with Turtle Graphics in JavaScript. Great for education and creative coding.",
     "install": "https://raw.githubusercontent.com/CodeGuppyPrograms/TurtleGFX/master/lib/turtlegfx.js"
   },
   {

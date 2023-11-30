@@ -23,9 +23,9 @@
   "marching": "https://raw.githubusercontent.com/jtnimoy/marching/master/lib/p5.marching.min.js",
   "mappa": "https://raw.githubusercontent.com/cvalenzuela/Mappa/master/dist/mappa.js",
   "ml5.js": "https://unpkg.com/ml5@latest/dist/ml5.min.js",
-  "p5.play": [
-    "https://p5play.org/v3/planck.min.js",
-    "https://p5play.org/v3/p5play.js"
+  "p5play": [
+    "https://cdn.jsdelivr.net/npm/p5play@3/planck.min.js",
+    "https://cdn.jsdelivr.net/npm/p5play@3/p5play.js"
   ],
   "p5.particle": "https://rawgit.com/bobcgausa/cook-js/master/p5.particle.js",
   "p5.Riso": "https://raw.githubusercontent.com/antiboredom/p5.riso/master/lib/p5.riso.js",
