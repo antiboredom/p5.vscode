@@ -3,7 +3,7 @@
   "publisher": "wmcicompsci",
   "displayName": "cs30-p5",
   "description": "Create and manage p5.js projects. Schellenberg customized the template to work well for CS30, but this is just a slight adaptation of the p5.vscode extension by Sam Lavigne.",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "repository": "https://github.com/schellenberg/p5.vscode",
   "engines": {
     "vscode": "^1.47.0"
