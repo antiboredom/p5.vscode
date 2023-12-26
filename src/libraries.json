@@ -231,7 +231,7 @@
       }
     ],
     "desc": "Simple 3D camera control with inertial pan, zoom, and rotate. Major contributions by Thomas Diewald.",
-    "install": "https://github.com/freshfork/p5.EasyCam/blob/master/p5.easycam.min.js"
+    "install": "https://raw.githubusercontent.com/freshfork/p5.EasyCam/master/p5.easycam.min.js"
   },
   {
     "name": "p5.experience",
