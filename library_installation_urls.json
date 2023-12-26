@@ -12,7 +12,7 @@
   "p5.collide2D": "https://raw.githubusercontent.com/bmoren/p5.collide2D/master/p5.collide2d.min.js",
   "p5.createloop": "https://unpkg.com/p5.createloop/dist/p5.createloop.js",
   "p5.dimensions": "https://raw.githubusercontent.com/Smilebags/p5.dimensions.js/master/libraries/p5.dimensions.js",
-  "p5.EasyCam": "https://github.com/freshfork/p5.EasyCam/blob/master/p5.easycam.min.js",
+  "p5.EasyCam": "https://raw.githubusercontent.com/freshfork/p5.EasyCam/master/p5.easycam.min.js",
   "p5.experience": "https://raw.githubusercontent.com/loneboarder/p5.experience.js/master/p5.experience.min.js",
   "p5.func": "https://raw.githubusercontent.com/IDMNYU/p5.js-func/master/lib/p5.func.min.js",
   "p5.geolocation": "https://raw.githubusercontent.com/bmoren/p5.geolocation/master/p5.geolocation.js",
