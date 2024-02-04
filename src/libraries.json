@@ -635,8 +635,8 @@
         "url": "https://rednoise.org/daniel"
       }
     ],
-    "desc": "RiTa.js provides a set of natural language processing objects for generative literature.",
-    "install": "https://unpkg.com/rita"
+    "desc": "Tools for natural language and generative creative writing.",
+    "install": "https://unpkg.com/rita@latest/dist/rita.min.js"
   },
   {
     "name": "Shape5",
