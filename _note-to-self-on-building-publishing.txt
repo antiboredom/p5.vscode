@@ -1,4 +1,18 @@
+//first, grab the updated p5js distribution by running:
+./update-p5.sh    (will have to be on a mac for this, or do it by hand...)
+OR update-p5js.py  (just need requests installed)
+
+
+Then...
 npm install -g @vscode/vsce
 npm install typescript
+
+
+Then, update the package.json file to an appropriate version number, then...
 vsce package
-vsce publish minor  OR vsce publish 1.7.0     (can just edit package.json to the version you want...)
+vsce publish 1.7.0     (use whatever version number you choose in package.json)
+
+
+
+If you instead want to try to automate the version number, you could use this instead, but would need to push the repo first.
+vsce publish minor 
