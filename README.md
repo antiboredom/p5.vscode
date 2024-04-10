@@ -10,7 +10,7 @@ I made this extension for my students in particular, but I hope it's helpful for
 
 1. Open the Command Palette (with `command-shift-p` on Mac, or `ctrl-shift-p` on Windows) and then start typing and select `Create p5.js Project`. 
 2. Select a new empty folder to put your project in.
-3. (optional) click the "Go Live" button in the bottom status bar to open your sketch in a browser
+3. (optional) From the Command Palette use `Live Preview: Start Server` to run your project
 4. Abolish cops.
 
 ### To install p5 libraries:

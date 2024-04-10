@@ -39,7 +39,7 @@
     ]
   },
   "extensionPack": [
-    "ritwickdey.liveserver"
+    "ms-vscode.live-server"
   ],
   "scripts": {
     "vscode:prepublish": "yarn run compile",
